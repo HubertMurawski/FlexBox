@@ -12,65 +12,26 @@ body,html {
 
 //Colors
 
-@turquoise: #1abc9c;
-.background-turquoise{ }
-
-@greenSea: #16a085;
-.background-
-
-@emerald: #2ecc71;
-.background-
-
-@nephritis: #27ae60;
-.background-
-
-@peterRiver: #3498db;
-.background-
-
-@blizeHole: #2980b9;
-.background-
-
-@amethyst: #9b59b6;
-.background-
-
-@wisteria: #8e44ad;
-.background-
-
-@wetAsphalt: #34495e;
-.background-
-
-@midnightBlue: #2c3e50;
-.background-
-
-@sunFlower: #f1c40f;
-.background-
-
-@orange: #f39c12;
-.background-
-
-@carrot: #e67e22;
-.background-
-
-@pumpkin: #d35400;
-.background-
-
-@alizarin: #e74c3c;
-background-
-
-@pomergranate: #c0392b;
-background-
-
-@clouds: #ecf0f1;
-background-
-
-@silver: #bdc3c7;
-background-
-
-@concrete: #95a5a6;
-background-
-
-@asbestos: #7f8c8d;
-background-
+@turquoise: #1abc9c; .background-turquoise { background-color: @turquoise; }
+@greenSea: #16a085; .background-greenSea { background-color: @greenSea; }
+@emerald: #2ecc71; .background-emerald { background-color: @emerald; }
+@nephritis: #27ae60; .background-nephritis { background-color: @nephritis }
+@peterRiver: #3498db;.background-peterRiver { background-color: @peterRiver }
+@belizeHole: #2980b9;.background-belizeHole { background-color: @belizeHole }
+@amethyst: #9b59b6;.background-amethyst { background-color: @amethyst }
+@wisteria: #8e44ad;.background-wisteria { background-color: @wisteria }
+@wetAsphalt: #34495e;.background-wetAsphalt { background-color: @wetAsphalt }
+@midnightBlue: #2c3e50;.background-midnightBlue { background-color: @midnightBlue }
+@sunFlower: #f1c40f;.background-sunFlower { background-color: @sunFlower }
+@orange: #f39c12;.background-orange { background-color: @orange }
+@carrot: #e67e22;.background-carrot { background-color: @carrot }
+@pumpkin: #d35400;.background-pumpkin { background-color: @pumpkin }
+@alizarin: #e74c3c;.background-alizarin { background-color: @alizarin }
+@pomergranate: #c0392b;.background-pomergranate { background-color: @pomergranate }
+@clouds: #ecf0f1;.background-clouds { background-color: @clouds }
+@silver: #bdc3c7;.background-silver { background-color: @silver }
+@concrete: #95a5a6;.background-concrete { background-color: @concrete }
+@asbestos: #7f8c8d;.background-asbestos { background-color: @asbestos }
 
 
 
@@ -80,19 +41,23 @@ background-
 	width: 1400px;
 	margin: 0 auto;
 
-	.row{
+	.flexRow{
 		//Flex
 		flex-wrap: wrap;
 		display: flex;
 		width: 100%;
-
 			//Box
 
 			@{box}{
-			background-color: #c7c7c7;
-			border: 3px solid #000;
-			box-sizing: border-box;
-			height: 100px;
+
+			padding: 20px;
+			margin: 10px;
+			border-radius: 2px;
+			text-align: center;
+	
+			font-size: 1.2em;
+
+
 			}
 
 			@box: ~".box-1, .box-2, .box-3, .box-4, .box-5, .box-6, .box-7, .box-8, .box-9, .box-10, .box-11, .box-12, .box-13, .box-14, .box-15, .box-16";
@@ -150,6 +115,12 @@ background-
 	flex-grow: 1;
 }
 
+.verticalCenter{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
 
 
 
